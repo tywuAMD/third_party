@@ -87,7 +87,7 @@ if (WIN32)
 endif()
 ExternalProject_Add(curl
   PREFIX curl
-  GIT_REPOSITORY "https://github.com/curl/curl.git"
+  GIT_REPOSITORY "https://gitclone.com/github.com/curl/curl.git"
   GIT_TAG "curl-7_86_0"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/curl/src/curl"
   EXCLUDE_FROM_ALL ON
@@ -108,7 +108,7 @@ ExternalProject_Add(curl
 )
 ExternalProject_Add(grpc-repo
   PREFIX grpc-repo
-  GIT_REPOSITORY "https://github.com/grpc/grpc.git"
+  GIT_REPOSITORY "https://gitclone.com/github.com/grpc/grpc.git"
   GIT_TAG "v1.54.3"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/grpc-repo/src/grpc"
   EXCLUDE_FROM_ALL ON
@@ -127,7 +127,7 @@ ExternalProject_Add(grpc-repo
 #
 ExternalProject_Add(nlohmann-json
   PREFIX nlohmann-json
-  GIT_REPOSITORY "https://github.com/nlohmann/json.git"
+  GIT_REPOSITORY "https://gitclone.com/github.com/nlohmann/json.git"
   GIT_TAG "v3.11.3"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/json"
   EXCLUDE_FROM_ALL ON
